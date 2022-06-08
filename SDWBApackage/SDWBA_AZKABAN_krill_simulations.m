@@ -43,3 +43,5 @@ for ind_iter = 1:n_iter
         TS_Simplified(ind_freq,ind_iter) = Calculate_Simplified_TS_SDWBA(frequency,length); 
     end
 end
+
+save('SDWBA_AZKABAN_data.mat',TS_Simplified,freq_dist,g_dist,h_dist,length_dist)
